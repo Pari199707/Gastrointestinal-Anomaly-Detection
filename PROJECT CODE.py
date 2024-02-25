@@ -14,9 +14,6 @@ from resizeimage import resizeimage
 
 K=4
 
-
-
-
 img=cv2.imread('C:/Users/Parinitha/Desktop/my project/kvasir-dataset/highly/img1.jpg',cv2.IMREAD_UNCHANGED)
 print('original dime:',img.shape)
 scale_percent=60
@@ -30,7 +27,6 @@ cv2.imshow("resized image",resized)
 cv2.imshow('org img',img)
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 cv2.imshow('gray',gray)
-
 
 #img=cv2.imread('C:/Users/Parinitha/Desktop/my project/kvasir-dataset/img2.jpg',0)
 gray=cv2.medianBlur(gray,5)
@@ -207,6 +203,3 @@ cv2.imshow("Image", orig)
 
 cv2.waitKey()
 cv2.destroyAllWindows()
-
-
-
